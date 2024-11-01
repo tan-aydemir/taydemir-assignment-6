@@ -3,6 +3,8 @@
 
 In this assignment, you'll explore the impact of changing parameters on linear regression. The goal is to create an interactive webpage to demonstrate how modifying these parameters affects regression results, especially when there is **no actual relationship** between `X` and `Y`. By tweaking these settings, you’ll observe how randomness can influence the slope and intercept in a regression model.
 
+The link to the demo: https://youtu.be/XDfHv40uYxk
+
 ## Task Overview
 
 The interactive webpage should allow users to input the following:
