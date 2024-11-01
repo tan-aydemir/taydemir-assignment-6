@@ -35,13 +35,15 @@ def generate_plots(N, mu, sigma2, S):
     # Finally, save the plot to "static/plot1.png" using plt.savefig()
     reg_eq = f"Y = {slope:.2f}X + {intercept:.2f}"   
      
-    plt.plot(X, model.predict(X.reshape(-1, 1)), color='red', label='Regression line')
+    plt.figure(figsize=(10, 5))
+    plt.scatter(X, Y, color="blue", alpha=0.5, label="Data points")  # Scatter plot of X and Y
+    plt.plot(X, model.predict(X.reshape(-1, 1)), color='red', label='Regression line')  # Regression line
     plt.xlabel('X')
     plt.ylabel('Y')
     plt.title(reg_eq)
     plt.legend()
-    
-    plot1_path = "starter_code/static/plot1.png"
+
+    plot1_path = "static/plot1.png"
     plt.savefig(plot1_path)
     plt.show()
     # Replace the above TODO 3 block with code to generate and save the plot
@@ -82,7 +84,7 @@ def generate_plots(N, mu, sigma2, S):
     plt.xlabel("Value")
     plt.ylabel("Frequency")
     plt.legend()
-    plot2_path = "starter_code/static/plot2.png"
+    plot2_path = "static/plot2.png"
     plt.savefig(plot2_path)
     plt.close()
 
@@ -112,5 +114,4 @@ def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    print(generate_plots(100, 0.3, 0.5, 10))
     app.run(debug=True)
