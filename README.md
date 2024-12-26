@@ -21,22 +21,25 @@ When the "Generate" button is clicked, the following outputs are generated:
    - Overlays histograms for the slopes and intercepts, marking the values from the initial dataset.
    - Highlights the proportion of slopes and intercepts more extreme than those in the initial dataset.
 
-
-6. The output would look something like this:
+The generated plot should something like
 ![image](https://github.com/user-attachments/assets/c8e3a991-f124-47e4-9d1f-7b39063c739e)
+ 
+### Observational Analysis
+Users can explore the effects of changing parameters, such as:
+- How increasing the sample size reduces variability.
+- How higher variance in noise impacts the regression line's accuracy.
+- The influence of the number of simulations on histogram distributions.
 
+## Observations and Insights
+- Random data often produces non-zero slopes and intercepts due to inherent variability.
+- Larger datasets (higher N) tend to produce regression results closer to zero, reflecting less noise impact.
+- Higher noise variance (σ²) increases the scatter in data, leading to greater variability in regression outcomes.
 
-   
-7. **Create a Short Demo Video (1-2 minutes)**:
-   - Create a demo video by screen recording your output with your voice-over.
-   - Explain any patterns you observe and discuss what happens when the sample size or noise level changes.
-   - Explain whatever you found interesting and your analysis. You can discuss any specific points or specific inputs you want to.
-   - Consider why random data might still produce non-zero slopes and intercepts in regression.
+## Applications
+This project serves as a powerful tool to:
+- Understand the effects of randomness in regression models.
+- Gain intuition about statistical variability and its implications in real-world data analysis.
+- Demonstrate the importance of data size and noise levels in predictive modeling.
 
-8. **Submission**:
-   - Submit both your completed code and the demo video link.
-   - You can either embed the demo video in your portfolio website or just create an unlisted YouTube video with a link to that YT video in your assignment 6 github repo's readme.
-
-## Key Takeaways
-
-This assignment helps you see how randomness can affect regression estimates. By experimenting with different parameters, you’ll get a better feel for how much variability there can be in slopes and intercepts when there’s no true relationship between `X` and `Y`. Using your observations and analysis will allow you to get a better and deep understanding of Linear Regression.
+## Conclusion
+This project highlights how randomness affects linear regression, even when no true relationship exists between X and Y. The interactive nature of the tool fosters a deeper understanding of statistical variability and linear regression principles. It is an excellent educational resource for students, analysts, and anyone interested in statistical modeling.
