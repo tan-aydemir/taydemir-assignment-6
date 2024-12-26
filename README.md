@@ -1,33 +1,26 @@
-# CS506 Assignment 6
-# Linear Regression
+# Exploring Linear Regression with Random Data: Interactive Webpage Project
 
-In this assignment, you'll explore the impact of changing parameters on linear regression. The goal is to create an interactive webpage to demonstrate how modifying these parameters affects regression results, especially when there is **no actual relationship** between `X` and `Y`. By tweaking these settings, you’ll observe how randomness can influence the slope and intercept in a regression model.
+## Overview
+This project investigates the impact of randomness on linear regression estimates through an interactive webpage. The goal is to demonstrate how modifying parameters like sample size, mean, variance, and the number of simulations influences regression results, even when there is no true relationship between the independent variable (X) and the dependent variable (Y). 
 
-The link to the demo: https://youtu.be/XDfHv40uYxk
+By exploring these settings, this project provides insights into how random noise can create variability in the slope and intercept of regression models.
 
-## Task Overview
+## Key Features
 
-The interactive webpage should allow users to input the following:
+### Interactive Webpage
+The project includes a dynamic webpage where users can input the following parameters:
+- **Sample size (N):** Number of data points in the dataset.
+- **Mean (μ):** Mean of the normal error term added to Y.
+- **Variance (σ²):** Variance of the normal error term.
+- **Number of simulations (S):** Number of datasets to simulate.
 
-- **Sample size (N)**: Number of data points in the dataset.
-- **Mean (mu)**: Mean of the normal error term added to `Y`.
-- **Variance (sigma²)**: Variance of the normal error term.
-- **Number of simulations (S)**: Number of datasets to simulate.
+When the "Generate" button is clicked, the following outputs are generated:
+1. **Scatter Plot and Regression Line:** A plot showing the random dataset (X, Y) with added noise, alongside the fitted regression line. The slope and intercept values for this line are also displayed.
+2. **Histograms of Slope and Intercept Values:** 
+   - Simulates S datasets and computes slopes and intercepts for each.
+   - Overlays histograms for the slopes and intercepts, marking the values from the initial dataset.
+   - Highlights the proportion of slopes and intercepts more extreme than those in the initial dataset.
 
-When the "Generate" button is clicked, the following should be displayed:
-
-1. **Scatter Plot and Regression Line**: A plot of the generated random dataset `(Y, X)`, where there is no real relationship between `X` and `Y`, with random noise. Include the fitted linear regression line on the plot and display the slope and intercept values.
-
-2. **Histogram of Slope and Intercept Values**: Generate `S` datasets, compute the slope and intercept for each, and display overlapping histograms. Mark the slope and intercept from the first dataset on the histogram. Show the proportions of slopes and intercepts that are "more extreme" than those in the initial dataset.
-
-## Instructions
-1. You can find the starter code in this repository under the "Code" section above. Please download it.
-2. **Setting Up Flask**: Already done in the starter code.
-3. **Complete the TODO Sections**: Follow the hints and complete each TODO section in the code.
-4. Just install the requirements and run the code using "python app.py" or "python3 app.py" when you are done with your code. Feel free to use additional libraries according to your understanding and interests.
-5. **Observe Results**:
-   - Experiment with different values for `N`, `mu`, `sigma²`, and `S`.
-   - Analyze how changing these values impacts the scatter plot and the histograms of slopes and intercepts.
 
 6. The output would look something like this:
 ![image](https://github.com/user-attachments/assets/c8e3a991-f124-47e4-9d1f-7b39063c739e)
